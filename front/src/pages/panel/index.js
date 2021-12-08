@@ -62,7 +62,7 @@ const Panel = (props) => {
 		case 'clubs/services': var html = 
 			<>
 				{mainmenu = false}
-				<Clubmenu></Clubmenu>
+				<Clubmenu id={props.match.params.id}></Clubmenu>
 				<Clubservices id={props.match.params.id}></Clubservices> 
 			</>
 	break;
@@ -83,14 +83,14 @@ const Panel = (props) => {
 		case 'courts/list': var html = 
 			<>
 				{mainmenu = false}
-				<Clubmenu></Clubmenu>
+				<Clubmenu id={props.match.params.id}></Clubmenu>
 				<Listcourt id={props.match.params.id}></Listcourt> 
 			</>
 			break;
 		case 'courts/get': var html = 
 			<>
 				{mainmenu = false}
-				<Clubmenu></Clubmenu>
+				<Clubmenu id={props.match.params.id}></Clubmenu>
 				<Getcourts></Getcourts> 
 			</>
 			break;
