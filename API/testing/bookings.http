@@ -1,0 +1,21 @@
+### add reserve
+POST http://localhost:3000/bookings/new
+Content-Type: application/json
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691
+
+	{
+		"pista" : 1,
+		"inicio" : "2021-10-16 19:30:00",
+		"fin" : "2021-10-16 21:30:00"
+	}
+
+### delete reserve
+POST http://127.0.0.1:3000/bookings/delete/3
+
+### user next reserve
+GET http://localhost:3000/bookings/list_user_reserve/
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691
+
+### user historic reserve
+GET http://localhost:3000/bookings/list_historic_reserve/
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691

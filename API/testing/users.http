@@ -1,0 +1,61 @@
+### login
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+	{
+		"user": "rubenpadelone@gmail.com",
+		"pass": "123456"
+	}
+
+### get data
+GET http://localhost:3000/users/get
+token: 9439cd35b9e5dfd5039b775165a17406b50e28ec
+
+### get list users
+GET http://127.0.0.1:3000/users/list
+
+### add
+POST http://localhost:3000/users/add
+Content-Type: application/json
+
+	{
+		"email": "prueba4@gmail.com",
+		"pass": "123456",
+		"name": "Pepa",
+		"first_name" : "Pi",
+		"DNI": "47021682L",
+		"phone": "666555442",
+		"city": "Madrid",
+		"CP": "28001"
+	}
+
+### edit user
+POST http://localhost:3000/users/edit
+Content-Type: application/json
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691
+
+	{
+		"user_rol": "god"
+	}
+
+### remove user
+POST http://127.0.0.1:3000/users/remove
+token: 5dc9b72fbcef651e31ff0b484117b119e17acebd
+
+### change pass user
+POST http://localhost:3000/users/change_pass
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691
+Content-Type: application/json
+
+	{
+		"pass": "333333",
+		"new_pass": "123456",
+		"rpt_new_pass": "123456"
+	}
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+### user list user payments methods
+GET http://localhost:3000/users/list_user_payments/:20
+
+### add user payment method
+POST http://localhost:3000/users/add_payment/:20
+Content-Type: application/json
+
+	{
+		"nombre": "Ruben",
+		"nº tarjeta": "4651 3215 7845 1502",
+		"cad": "10/22",
+		"cvc": "111"
+	}

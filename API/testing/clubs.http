@@ -1,0 +1,37 @@
+### add new club
+POST http://localhost:3000/clubs/add
+Content-Type: application/json
+token: dd8d92761853197c9e2a3181fd0bc3e221b0247d
+
+{
+	"id_user": 2,
+	"nombre":"Club Padel Illescas",
+	"email": "padelillescas@illescas.com",
+	"telefono": "+34 915555555",
+	"ciudad": "Illescas",
+	"direccion": "Calle Mayor 13",
+	"provincia": "Toledo",
+	"CP": "05478",
+	"pais": "España"
+}
+
+### club data
+GET http://localhost:3000/clubs/get/2
+
+### clubs list
+GET http://localhost:3000/clubs/list
+
+### edit club
+POST http://localhost:3000/clubs/edit/2
+Content-Type: application/json
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691
+
+	{
+		"phone": "+34 913333330"
+	}
+
+### remove club
+POST http://localhost:3000/clubs/remove/7
+Content-Type: application/json
+token: 569b397653c146ceb79d3879c89dec6e64633dcc
+

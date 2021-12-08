@@ -1,0 +1,33 @@
+### add court
+POST http://localhost:3000/courts/add/2
+Content-Type: application/json
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691
+
+	{
+		"nombre":"Pista 4",
+		"numero_pista" : 4,
+		"tipo" : "indoor",
+		"size": "dobles",
+		"material": "cristal"
+	}
+
+### edit court
+POST http://localhost:3000/courts/edit/3
+Content-Type: application/json
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691
+
+	{
+		"start_hour" : 480,
+		"end_hour" : 1380
+	}
+
+### list courts club
+GET http://127.0.0.1:3000/courts/list/2
+
+### data court
+GET http://127.0.0.1:3000/courts/data/2
+
+### remove court club
+POST http://localhost:3000/courts/remove/3
+Content-Type: application/json
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691

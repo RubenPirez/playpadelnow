@@ -1,0 +1,16 @@
+### add new favorite club
+POST http://127.0.0.1:3000/favorites/add
+Content-Type: application/json
+token: 9439cd35b9e5dfd5039b775165a17406b50e28ec
+
+	{
+		"club": 2
+	}
+
+### list favorite clubs user
+GET http://127.0.0.1:3000/favorites/list
+token: e4a3241411add9fbe50fa9dc1bc8cd658d2f2f96
+
+### remove favorite
+POST http://127.0.0.1:3000/favorites/remove/2
+token: 482f5755ff0b3dfa4f522cf6f789a8736318a691
