@@ -1,0 +1,21 @@
+
+.getclub p{
+	color: #dbcbcb;
+	border: 1px solid #d3d0d0;
+	border-radius: 15px;
+}
+
+.getclub i{
+	font-size: 2rem;
+	color: #64acf0;
+	padding: .8rem;
+	margin: .3rem;
+	border: 1px solid #d3d0d0;
+	border-radius: 15px;
+}
+
+.getclub img{
+	width: 200px;
+	height: 200px;
+	margin-right: 5rem;
+}

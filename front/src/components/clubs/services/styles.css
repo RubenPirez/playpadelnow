@@ -1,0 +1,15 @@
+
+.services p{
+	color: #dbcbcb;
+	border: 1px solid #d3d0d0;
+	border-radius: 15px;
+}
+
+.services i{
+	font-size: 2rem;
+	color: #64acf0;
+	padding: .8rem;
+	margin: .3rem;
+	border: 1px solid #d3d0d0;
+	border-radius: 15px;
+}
