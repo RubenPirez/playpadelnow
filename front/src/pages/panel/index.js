@@ -28,16 +28,10 @@ const Panel = (props) => {
 	const uri = (props.match.params.category === undefined?"":props.match.params.category)
 			+ '/'
 			+ (props.match.params.subcategory === undefined?"":props.match.params.subcategory)
-			/*+ '/'
-			+ (props.match.params.id === undefined?"":props.match.params.id)*/;
 	
 	//console.log(props);
 
 	var mainmenu = true;
-	/*
-	if ( props.match.params.category == 'courts' ){
-		html += <Clubmenu></Clubmenu>
-	}*/
 
 	switch (uri) {
 		case '/': var html = <Favorites></Favorites>; break;

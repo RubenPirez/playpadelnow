@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import API from "../../config/api";
 import { Redirect } from "react-router";
 
-const Login = (props) => {
+const Login = () => {
 
 	const [state, setState] = useState({error: false, redirect: false});
 
